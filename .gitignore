@@ -38,6 +38,7 @@ bin
 
 # use only typescript
 *.js
+*.js.map
 
 # TSD
 # https://github.com/Definitelytyped/tsd

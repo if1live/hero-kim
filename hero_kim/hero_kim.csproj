@@ -29,6 +29,8 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="boot.ts" />
+    <TypeScriptCompile Include="game.ts" />
     <TypeScriptCompile Include="libs\chai.d.ts" />
     <TypeScriptCompile Include="libs\mocha.d.ts" />
     <TypeScriptCompile Include="libs\phaser.d.ts" />
@@ -71,6 +73,7 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
     <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
     <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptOutFile>all.js</TypeScriptOutFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
     <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
