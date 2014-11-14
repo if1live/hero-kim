@@ -1,14 +1,32 @@
 ﻿module HeroKim {
     export class Game extends Phaser.Game {
         constructor() {
-            super(800, 600, Phaser.AUTO, 'content', null);
+            // this.device is created in boot(), but I need it now.
+            var device = new Phaser.Device(this);
+            // for mobile browser, use fullsize
+            if (device.desktop) {
+                var w = 480;
+                var h = 640;
+            } else {
+                var w = window.innerWidth;
+                var h = window.innerHeight;
+            } 
 
-            this.state.add('Boot', Boot, false);
-            //this.state.add('Preloader', Preloader, false);
-            //this.state.add('MainMenu', MainMenu, false);
-            //this.state.add('Level1', Level1, false);
+            super(w, h, Phaser.AUTO, 'content', null);
+            
 
-            this.state.start('Boot');
+            this.state.add('TitleState', TitleState, false);
+            this.state.add('TutorialState', TutorialState, false);
+
+            this.state.add('StoryState', StoryState, false);
+
+            this.state.add('PreoareBattleState', PrepareBattleState, false);
+            this.state.add('StoreState', StoreState, false);
+            
+            this.state.add('BattleState', BattleState, false);
+
+            this.state.start('TitleState');
         }
     }
+
 }

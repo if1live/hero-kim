@@ -29,11 +29,16 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
-    <TypeScriptCompile Include="boot.ts" />
+    <TypeScriptCompile Include="battle_state.ts" />
+    <TypeScriptCompile Include="story_state.ts" />
+    <TypeScriptCompile Include="title_state.ts" />
     <TypeScriptCompile Include="game.ts" />
     <TypeScriptCompile Include="libs\chai.d.ts" />
     <TypeScriptCompile Include="libs\mocha.d.ts" />
     <TypeScriptCompile Include="libs\phaser.d.ts" />
+    <TypeScriptCompile Include="prepare_battle_state.ts" />
+    <TypeScriptCompile Include="store_state.ts" />
+    <TypeScriptCompile Include="tutorial_state.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="libs\phaser.map" />
