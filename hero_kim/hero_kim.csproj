@@ -18,14 +18,19 @@
     <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="app.css" />
+    <Content Include="css\normalize-3.0.2.css" />
     <Content Include="index.html" />
+    <Content Include="libs\chai.js" />
+    <Content Include="libs\mocha.css" />
+    <Content Include="libs\mocha.js" />
     <Content Include="libs\phaser.js" />
     <Content Include="libs\phaser.min.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="libs\chai.d.ts" />
+    <TypeScriptCompile Include="libs\mocha.d.ts" />
     <TypeScriptCompile Include="libs\phaser.d.ts" />
   </ItemGroup>
   <ItemGroup>
