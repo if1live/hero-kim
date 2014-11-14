@@ -36,4 +36,9 @@ hero_kim/libs/
 obj
 bin
 
+# use only typescript
 *.js
+
+# TSD
+# https://github.com/Definitelytyped/tsd
+typings/

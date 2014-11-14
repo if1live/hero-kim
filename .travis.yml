@@ -7,9 +7,12 @@ install:
   - npm install -g typescript
   - npm install -g bower
   - npm install -g grunt-cli
+  - npm install -g tsd
   - npm install
   - bower install
-  - grunt
 
 script:
-  - echo 1
+  - grunt
+
+notifications:
+  email: false
