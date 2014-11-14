@@ -1,0 +1,15 @@
+{
+  "name": "hero-kim",
+  "description": "simple game",
+  "version": "0.0.1",
+  "private": false,
+  "homepage": "https://github.com/if1live/hero-kim",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/if1live/hero-kim.git"
+  },
+  "dependencies": {
+    "grunt": "0.4.5",
+    "grunt-bowercopy": "1.1.0"
+  }
+}

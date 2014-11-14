@@ -26,3 +26,14 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+
+# bower
+bower-components/
+libs/
+hero_kim/libs/
+
+obj
+bin
+
+*.js

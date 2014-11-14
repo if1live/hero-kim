@@ -1,0 +1,11 @@
+{
+  "name": "hero-kim",
+  "version": "0.0.1",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "phaser": "2.1.3"
+  }
+}
